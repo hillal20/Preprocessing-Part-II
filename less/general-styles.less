@@ -16,17 +16,26 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    background-color: turquoise;
+    padding:20px ;
+    max-width: 880px;
+    width:100%;
     margin: auto;
+     &:hover{
+               background-color:darken(turquoise,10%);
+            }
     @media @laptop {
-        background: black;
+        background: rgb(158, 50, 161);
+        width: 100%;
       }
       
       @media @tablet {
         background: purple;
+        width:100%;
       }
       
       @media @phone {
         background: green;
+        width:100%;
       }
 }
